@@ -5,5 +5,4 @@ Stay tuned if you want to hear my insights on Augmented Reality (AR), AI, 3D, Ne
 Currently working on a custom blog to write about these interests of mine!
 
 
-Files by Alex M.
-Template from KARDS
+Files by <mcneilly>
