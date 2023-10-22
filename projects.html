@@ -1,72 +1,269 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>projects</title>
-        <meta content="" name="description" />
-        <meta content="" property="og:title" />
-        <meta content="" property="og:description" />
+<html lang="en">
 
-        <meta content="" property="twitter:title" />
-        <meta content="" property="twitter:description" />
-        <meta property="og:type" content="website" />
-        <meta content="" name="twitter:card" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>projects</title>
+  <meta content="" name="description" />
+  <meta content="" property="og:title" />
+  <meta content="" property="og:description" />
 
-        <link rel="stylesheet" type="text/css" href="style.css">
+  <meta content="" property="twitter:title" />
+  <meta content="" property="twitter:description" />
+  <meta property="og:type" content="website" />
+  <meta content="" name="twitter:card" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
 
-        <script type="text/javascript">
-            !(function (o, c) {
-                var n = c.documentElement,
-                    t = " w-mod-";
-                (n.className += t + "js"), ("ontouchstart" in o || (o.DocumentTouch && c instanceof DocumentTouch)) && (n.className += t + "touch");
-            })(window, document);
-        </script>
-        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <link href="favicon.ico" rel="apple-touch-icon" />
+    body {
+      font-family: Albert Sans, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #121212;
+      display: flex;
+      flex-direction: row;
+    }
+
+    nav {
+      width: 200px;
+      height: 100%;
+      padding: 16px;
+      background-color: #ECFFFD;
+      position: fixed;
+      border-right: 1px solid #e0e0e0;
+      box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+    }
+
+    nav li {
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 5px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #121212;
+      font-weight: 300;
+      display: block;
+      padding: 10px;
+      margin: -1px;
+      transition: padding-left 0.3s, background-color 0.3s;
+    }
+
+    nav a:hover {
+      padding-left: 20px;
+      background-color: #e0f7fa;
+    }
+
+    .contact-info {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      font-size: 0.9em;
+      padding: 10px;
+      border: 1px solid #e0e0e0;
+      background-color: #121212;
+      color: white;
+      z-index: 10;
+      font-weight: 300;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .content {
+      margin-left: 216px;
+      padding: 24px;
+      flex: 1;
+      display: flex;
+    }
+
+    .bio {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      flex-direction: row;
+    }
+
+    .bio-text {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-weight: 300;
+    }
+
+    .bio-text h1 {
+      font-size: 2.5em;
+      margin-block-start: 0.1em;
+      margin-block-end: 0.1em;
+    }
+
+    .bio-text p {
+      font-size: 1em;
+    }
+
+    .bio img {
+      flex: 1;
+      border-radius: 2%;
+      object-fit: cover;
+      max-width: 25vw;
+      max-height: 50vh;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 16px;
+      font-weight: 100;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: none;
+    }
+
+    .info-table table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    .info-table th,
+    .info-table td {
+      text-align: left;
+      padding: 8px;
+      border-bottom: 1px solid #e0e0e0;
+      /* Light grey border for readability */
+    }
+
+    .info-table th {
+      border-bottom: 2px solid #e0e0e0;
+      /* Slightly thicker border under headers */
+    }
 
 
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+      }
 
-        <style>
-            .wf-loading * {
-                opacity: 0;
-            }
-        </style>
-    </head>
-    <body class="fullbody">
-        <div class="cols siterow">
-            <div class="sitemap-col site-col site-col-2">
-                <h1 class="h1">
-                    <a href="index.html" style="color: #fff;text-decoration:none;">&lt;mcneilly&gt;</a><br /><br />
-                    <a href="essays.html" class="cta">essays</a><br /><br />
-                    <a href="education.html" class="cta">education</a><br /><br />
-                    <a href="Alexander_Mcneilly_Resume.pdf" class="cta">resume</a><br /><br />
-                    <a href="projects.html" class="cta" style="color:#90EE90;">projects</a><br /><br />
-                    <a href="https://github.com/Spatial-Blocks/spatial-blocks-0.4" class="cta">spatial<br>blocks</a><br /><br />
+      .content {
+        margin-left: 0;
+        flex-direction: column;
+      }
 
-                </h1>
-            </div>
-            <div class="column-7 site-col site-col-5">
-                <h1 class="body-main">
-                    <div style="font-weight:bold;font-size:2em;line-height:1.15em;">projects<br /></div>
-                    <br />
-                    <br />
-                    <ul>
-                        <li><a href="https://github.com/alex-mcneilly/mini-compiler" class="cta">[sept 2023 -- present] - AshLang Compiler (inactive rn)</a></li><br><br>
-                        <li><a href="https://github.com/Menamonmon/hackmit2023" class="cta">[sept 2023] - AshLang Compiler (inactive rn)</a></li><br><br>
-                        <li><a href="https://github.com/Spatial-Blocks/spatial-blocks-0.4" class="cta">[august 2023 -- present] - Spatial Blocks</a></li><br><br>
-                        <li><a href="https://github.com/alex-mcneilly/hackchat" class="cta">[august 2023] - HackChat (in progress :3)</a></li><br><br>
-                        <li><a href="https://github.com/alex-mcneilly/renders-fyi" class="cta">[july 2023 -- present] - Renders.FYI (inactive rn)</a></li><br><br>
-                        <li><a href="https://github.com/alex-mcneilly/value-add/blob/main/README.md" class="cta">[july 2023] - ValueAdd</a></li><br><br>
-                        <li><a href="https://github.com/alex-mcneilly/toybox-engine" class="cta">[june 2023 -- present] - ToyBox Engine (in progress :3)</a></li><br><br>
-                        <li><a href="https://github.com/alex-mcneilly/supanotes-redux" class="cta">[june 2023] - SupaNotes</a></li><br><br>
-                        
-                    </ul><br><br>
-                </h1>
-            </div>
-            <div class="column-9 site-col site-col-5">
-                <img sizes="(max-width: 767px) 100vw, (max-width: 991px) 40vw, (max-width: 1279px) 39vw, 41vw" src="ascii-blocks.jpg" alt="" class="home image"
-                />
-            </div>
+      .bio {
+        flex-direction: column;
+        border-radius: 5%;
+      }
+
+      .bio img {
+        flex: 1;
+        border-radius: 2%;
+        object-fit: cover;
+        max-width: 25vw;
+        max-height: 50vh;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .info-table img {
+        width: 100%;
+        max-width: 200px;
+        /* Adjust max width as needed */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="essays.html">🗒️ Essays</a></li>
+      <li><a href="education.html">🎓 Education</a></li>
+      <li><a href="Alex_Mcneilly_Resume.pdf">🪅 Resume</a></li>
+      <li><a href="projects.html">🔧 <b>Projects</b></a></li>
+      <li><a href="research.html">🔬 Research</a></li>
+    </ul>
+    <p style="font-weight:600; font-size: 0.75em; color: #999999; margin-left: 5px;"><br> © 2023 alex mcneilly</p>
+  </nav>
+
+  <div class="content">
+    <div class="bio" id="bio">
+      <div class="bio-text">
+        <h1>🔧 my projects</a></h1>
+        <div class="bio-text">
+          <p>
+          <div class="info-table">
+            <table style="width: 100%;">
+              <tr>
+                <th>🔧 Name</th>
+                <th></th>
+                <th>📃 Description</th>
+                <th>🕗 Date</th>
+              </tr>
+              <tr>
+                <td><img src="splocks.png" alt="Project A Image" style="width:50px;"></td>
+                <td><a href="#">Splocks<br>(Spatial Blocks)</a></td>
+                <td>A web-based Scratch-style coding engine for 3D browser-based rendering</td>
+                <td>Sep 2023 - Present</td>
+              </tr>
+              <tr>
+
+                <td><img src="project-b.jpg" alt="Project B Image" style="width:50px;"></td>
+                <td>AshLang Compiler</td>
+                <td>A C++ based compiler for a data-centric programming lanaguage</td>
+                <td>Feb 2023</td>
+              </tr>
+              <tr>
+                <td><img src="project-b.jpg" alt="Project B Image" style="width:50px;"></td>
+                <td>Project B</td>
+                <td>Project B is a mobile application...</td>
+                <td>Feb 2023</td>
+              </tr>
+            </table>
+          </div>
+          </p>
         </div>
-    </body>
+
+      </div>
+
+      <div class="contact-info">
+        you can reach me at:<br>
+        <a href="mailto:mcneilly@mit.edu">mcneilly@mit.edu</a> | <a
+          href="https://www.linkedin.com/in/amcneilly/ target=" _blank">LinkedIn</a> | <a
+          href="https://twitter.com/mcneilly_alex" target="_blank">Twitter</a>
+      </div>
+
+</body>
+
 </html>
