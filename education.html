@@ -1,80 +1,312 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>education @ m.i.t.</title>
-        <meta content="things i am studying" name="description" />
-        <meta content="education @ mcneilly" property="og:title" />
-        <meta content="things i am studying" property="og:description" />
+<html lang="en">
 
-        <meta content="education @ mcneilly" property="twitter:title" />
-        <meta content="things i am studying" property="twitter:description" />
-        <meta property="og:type" content="website" />
-        <meta content="" name="twitter:card" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>education @ m.i.t.</title>
+  <meta content="things i am studying" name="description" />
+  <meta content="education @ mcneilly" property="og:title" />
+  <meta content="things i am studying" property="og:description" />
 
-        <link rel="stylesheet" type="text/css" href="style.css">
+  <meta content="education @ mcneilly" property="twitter:title" />
+  <meta content="things i am studying" property="twitter:description" />
+  <meta property="og:type" content="website" />
+  <meta content="" name="twitter:card" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
 
-        <script type="text/javascript">
-            !(function (o, c) {
-                var n = c.documentElement,
-                    t = " w-mod-";
-                (n.className += t + "js"), ("ontouchstart" in o || (o.DocumentTouch && c instanceof DocumentTouch)) && (n.className += t + "touch");
-            })(window, document);
-        </script>
-        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <link href="favicon.ico" rel="apple-touch-icon" />
+    body {
+      font-family: Albert Sans, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #121212;
+      display: flex;
+      flex-direction: row;
+    }
 
+    nav {
+      width: 200px;
+      height: 100%;
+      padding: 16px;
+      background-color: #ECFFFD;
+      position: fixed;
+      border-right: 1px solid #e0e0e0;
+      box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    }
 
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+    }
 
-        <style>
-            .wf-loading * {
-                opacity: 0;
-            }
-        </style>
-    </head>
-    <body class="fullbody">
-        <div class="cols siterow">
-            <div class="sitemap-col site-col site-col-2">
-                <h1 class="h1">
-                    <a href="index.html" style="color: #fff;text-decoration:none;">&lt;mcneilly&gt;</a><br /><br />
-                    <a href="essays.html" class="cta">essays</a><br /><br />
-                    <a href="education.html" class="cta" style="color:#90EE90;">education</a><br /><br />
-                    <a href="Alexander_Mcneilly_Resume.pdf" class="cta">resume</a><br /><br />
-                    <a href="projects.html" class="cta">projects</a><br /><br />
-                    <a href="https://github.com/Spatial-Blocks/spatial-blocks-0.4" class="cta">spatial<br>blocks</a><br /><br />
+    nav li {
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 5px;
+    }
 
-                </h1>
-            </div>
-            <div class="column-7 site-col site-col-5">
-                <h1 class="body-main">
-                    <div style="font-weight:bold;font-size:2em;line-height:1.15em;">education @ m.i.t.<br /></div>
-                    <br />
-                    <br />
-                    <div>
-                        <b style="text-decoration:underline;">studying</b>: b.s. in computer science (minor in math)<br /><br />
-                        <b style="text-decoration:underline;">activities</b>: shpe, 2023 mit pokerbots competition, citadel 2023 east coast datathon, tedxboston 2023 speaker, project euler, mit opencode<br /><br />
-                    </div>
-                    <!--
-                    cool things I have studied:
-                    <ul>
-                        <li>python, c + assembly, discrete math</li>
-                        <li>design fundamentals, linear algebra</li>
-                    </ul><br><br>
-                    -->
-                    <br>
-                    technologies I know:
-                    <ul>
-                        <li>c/c++, python, javascript/tyescript, java, c#, sql</li>
-                        <li>react, node.js, linux, three.js, webgpu, next.js</li>
-                        <li>git, figma, unity, docker, kubernetes, mongodb</li>
-                        <li>oop, data structures, algorithms, agile</li>
-                    </ul>
-                </h1>
-            </div>
-            <div class="column-9 site-col site-col-5">
-                <img sizes="(max-width: 767px) 100vw, (max-width: 991px) 40vw, (max-width: 1279px) 39vw, 41vw" src="ascii-mit.jpg" alt="" class="home image"
-                />
-            </div>
+    nav a {
+      text-decoration: none;
+      color: #121212;
+      font-weight: 300;
+      display: block;
+      padding: 10px;
+      margin: -1px;
+      transition: padding-left 0.3s, background-color 0.3s;
+    }
+
+    nav a:hover {
+      padding-left: 20px;
+      background-color: #e0f7fa;
+    }
+
+    .contact-info {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      font-size: 0.9em;
+      padding: 10px;
+      border: 1px solid #e0e0e0;
+      background-color: #121212;
+      color: white;
+      z-index: 10;
+      font-weight: 300;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .content {
+      margin-left: 216px;
+      padding: 24px;
+      flex: 1;
+      display: flex;
+    }
+
+    .bio {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      flex-direction: row;
+    }
+
+    .bio-text {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-weight: 300;
+    }
+
+    .bio-text h1 {
+      font-size: 2.5em;
+      margin-block-start: 0.1em;
+      margin-block-end: 0.1em;
+    }
+
+    .bio-text p {
+      font-size: 1em;
+    }
+
+    .bio img {
+      flex: 1;
+      border-radius: 2%;
+      object-fit: cover;
+      max-width: 25vw;
+      max-height: 50vh;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 16px;
+      font-weight: 100;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: none;
+    }
+
+    .course-table table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+
+    .course-table th, .course-table td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #e0e0e0; /* Light grey border for readability */
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .content {
+        margin-left: 0;
+        flex-direction: column;
+      }
+
+      .bio {
+        flex-direction: column;
+        border-radius: 5%;
+      }
+
+      .bio img {
+        flex: 1;
+        border-radius: 2%;
+        object-fit: cover;
+        max-width: 25vw;
+        max-height: 50vh;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .course-table th, .course-table td {
+          display: block;
+          width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="essays.html">🗒️ Essays</a></li>
+      <li><a href="education.html">🎓 <b>Education</b></a></li>
+      <li><a href="Alex_Mcneilly_Resume.pdf">🪅 Resume</a></li>
+      <li><a href="projects.html">🔧 Projects</a></li>
+      <li><a href="research.html">🔬 Research</a></li>
+    </ul>
+    <p style="font-weight:600; font-size: 0.75em; color: #999999; margin-left: 5px;"><br> © 2023 alex mcneilly</p>
+  </nav>
+
+  <div class="content">
+    <div class="bio" id="bio">
+      <div class="bio-text">
+        <h1>🧮 studying cs @ m.i.t.</a></h1>
+        <div class="bio-text">
+          <p>
+            <table>
+              <tr>
+                <td style="vertical-align: top; padding-right: 10px;"><b>studying: </b></td>
+                <td>Computer Science</td>
+              </tr>
+              <tr>
+                <td style="vertical-align: top; padding-right: 10px;"><b>activities: </b></td>
+                <td> SHPE, Latinos in Science and Engineering, MIT Informatics Tournament, Poker Club, Project Euler
+</td>
+              </tr>
+              <tr>
+                <td style="vertical-align: top; padding-right: 10px;"><b>stuff i know:<b></b></td>
+                <td>C/C++, JavaScript, TypeScript, Python, Java, C#</td>
+
+              </tr>
+            </table>
+          <div class="course-table">
+              <table>
+                  <tr>
+                      <th colspan="4">Senior Year</th>
+                  </tr>
+                  <tr>
+                      <td>Systems Engineering</td>
+                      <td>Computation Structures</td>
+                      <td>Applied Algorithms</td>
+                      <td>Interactive Technologies</td>
+                  </tr>
+                <tr>
+                    <td>Video + Photography</td>
+                    <td>Biology</td>
+                    <td>Art + Technology</td>
+                </tr>
+                  <tr>
+                      <th colspan="4">Junior Year</th>
+                  </tr>
+                  <tr>
+                      <td>Computer Graphics</td>
+                      <td>Shape Analysis</td>
+                      <td>Computer Vision</td>
+                      <td>Software Design</td>
+                  </tr>
+                </tr>
+                <tr>
+                    <td>Inverse Graphics</td>
+                    <td>Visual Communication</td>
+                    <td>3D Art</td>
+                    <td>Multimodal Interfaces</td>
+                </tr>
+                  <tr>
+                      <th colspan="4">Sophomore Year</th>
+                  </tr>
+                  <tr>
+                      <td>Software Construction</td>
+                      <td>Python Programming</td>
+                      <td>Machine Learning</td>
+                      <td>Algorithm Analysis</td>
+                  </tr>
+                </tr>
+                <tr>
+                    <td>Technology + Culture</td>
+                    <td>Data Structures</td>
+                    <td>Chemistry</td>
+                </tr>
+                  <tr>
+                      <th colspan="4">Freshman Year</th>
+                  </tr>
+                  <tr>
+                      <td>Calculus</td>
+                      <td>C and Assembly</td>
+                      <td>CS Using Python</td>
+                      <td>Discrete Math</td>
+                  </tr>
+                </tr>
+                <tr>
+                    <td>Linear Algebra</td>
+                    <td>Design Studio I</td>
+                    <td>Physics I & II</td>
+                </tr>
+              </table>
+          </div>
+          </p>
         </div>
-    </body>
+      </div>
+      <img src="mit.jpg" alt="alex mcneilly">
+    </div>
+
+  </div>
+
+  <div class="contact-info">
+    you can reach me at:<br>
+    <a href="mailto:mcneilly@mit.edu">mcneilly@mit.edu</a> | <a href="https://www.linkedin.com/in/amcneilly/ target="
+      _blank">LinkedIn</a> | <a href="https://twitter.com/mcneilly_alex" target="_blank">Twitter</a>
+  </div>
+
+</body>
+
 </html>
