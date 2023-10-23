@@ -127,6 +127,7 @@
       max-width: 25vw;
       max-height: 50vh;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      align-self: flex-start;
     }
 
     footer {
@@ -158,6 +159,38 @@
         border-bottom: 1px solid #e0e0e0; /* Light grey border for readability */
     }
 
+    .collapsible {
+        margin-top: 1.5em;
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        font-family: 'Albert Sans';
+    }
+
+    .active, .collapsible:hover {
+        background-color: #e0e0e0;
+    }
+
+    .collapse-content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+    }
+
+    .collapsible .icon {
+        transition: transform 0.3s;
+    }
+
+    .collapsible.active .icon {
+        transform: rotate(180deg);
+    }
+
     /* Mobile responsiveness */
     @media (max-width: 768px) {
       nav {
@@ -185,6 +218,7 @@
         max-width: 25vw;
         max-height: 50vh;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        align-self: flex-start;
       }
       .course-table th, .course-table td {
           display: block;
@@ -210,88 +244,106 @@
   <div class="content">
     <div class="bio" id="bio">
       <div class="bio-text">
-        <h1>🧮 studying cs @ m.i.t.</a></h1>
+        <h1>💻 cs @ m.i.t.</a></h1>
         <div class="bio-text">
           <p>
             <table>
               <tr>
                 <td style="vertical-align: top; padding-right: 10px;"><b>studying: </b></td>
-                <td>Computer Science</td>
+                <td>computer science</td>
+              </tr>
+              <tr>
+                <td style="vertical-align: top; padding-right: 10px;"> </td>
+                <td> </td>         
               </tr>
               <tr>
                 <td style="vertical-align: top; padding-right: 10px;"><b>activities: </b></td>
-                <td> SHPE, Latinos in Science and Engineering, MIT Informatics Tournament, Poker Club, Project Euler
+                <td> society of hispanic professional engineers, latinos in science and engineering, vr/ar @ mit, mit informatics tournament, poker club, project euler
 </td>
               </tr>
               <tr>
-                <td style="vertical-align: top; padding-right: 10px;"><b>stuff i know:<b></b></td>
-                <td>C/C++, JavaScript, TypeScript, Python, Java, C#</td>
-
+                <td style="vertical-align: top; padding-right: 10px;"> </td>
+                <td> </td>         
+              </tr>
+              <tr>
+                <td style="vertical-align: top; padding-right: 10px;"><b>skills: </b></td>
+                <td>c/c++, javascript, typescript, python, java, c#,</td>         
+              </tr>
+              <tr>
+                <td style="vertical-align: top; padding-right: 10px;"></td>
+                <td>webgl, three.js, react, node.js, next.js, graphql,</td>         
+              </tr>
+              <tr>
+                <td style="vertical-align: top; padding-right: 10px;"></td>
+                <td>aws, postgres, tailwind, augmented reality</td>         
               </tr>
             </table>
-          <div class="course-table">
+          <button type="button" class="collapsible">classes i'm taking <span class="icon">&#9660;</span></button>
+          <div class="collapse-content">
+            <div class="course-table">
               <table>
                   <tr>
-                      <th colspan="4">Senior Year</th>
+                      <th colspan="4">senior year</th>
                   </tr>
                   <tr>
-                      <td>Systems Engineering</td>
-                      <td>Computation Structures</td>
-                      <td>Applied Algorithms</td>
-                      <td>Interactive Technologies</td>
+                      <td>systems engineering</td>
+                      <td>computation structures</td>
+                      <td>applied algorithms</td>
+                      <td>interactive technologies</td>
                   </tr>
                 <tr>
-                    <td>Video + Photography</td>
-                    <td>Biology</td>
-                    <td>Art + Technology</td>
+                    <td>video + photography</td>
+                    <td>art + technology</td>
+                    <td>biology</td>
                 </tr>
                   <tr>
-                      <th colspan="4">Junior Year</th>
+                      <th colspan="4">junior year</th>
                   </tr>
                   <tr>
-                      <td>Computer Graphics</td>
-                      <td>Shape Analysis</td>
-                      <td>Computer Vision</td>
-                      <td>Software Design</td>
-                  </tr>
-                </tr>
-                <tr>
-                    <td>Inverse Graphics</td>
-                    <td>Visual Communication</td>
-                    <td>3D Art</td>
-                    <td>Multimodal Interfaces</td>
-                </tr>
-                  <tr>
-                      <th colspan="4">Sophomore Year</th>
-                  </tr>
-                  <tr>
-                      <td>Software Construction</td>
-                      <td>Python Programming</td>
-                      <td>Machine Learning</td>
-                      <td>Algorithm Analysis</td>
+                      <td>computer graphics</td>
+                      <td>shape analysis</td>
+                      <td>computer vision</td>
+                      <td>software design</td>
                   </tr>
                 </tr>
                 <tr>
-                    <td>Technology + Culture</td>
-                    <td>Data Structures</td>
-                    <td>Chemistry</td>
+                    <td>inverse graphics</td>
+                    <td>visual communication</td>
+                    <td>3d art</td>
+                    <td>multimodal interfaces</td>
                 </tr>
                   <tr>
-                      <th colspan="4">Freshman Year</th>
+                      <th colspan="4">sophomore year</th>
                   </tr>
                   <tr>
-                      <td>Calculus</td>
-                      <td>C and Assembly</td>
-                      <td>CS Using Python</td>
-                      <td>Discrete Math</td>
+                      <td>software construction</td>
+                      <td>python programming</td>
+                      <td>machine learning</td>
+                      <td>algorithm analysis</td>
                   </tr>
                 </tr>
                 <tr>
-                    <td>Linear Algebra</td>
-                    <td>Design Studio I</td>
-                    <td>Physics I & II</td>
+                    <td>technology + culture</td>
+                    <td>data structures</td>
+                    <td>chemistry</td>
+                </tr>
+                  <tr>
+                      <th colspan="4">freshman year</th>
+                  </tr>
+                  <tr>
+                      <td>calculus</td>
+                      <td>C + assembly</td>
+                      <td>python</td>
+                      <td>discrete math</td>
+                  </tr>
+                </tr>
+                <tr>
+                    <td>linear algebra</td>
+                    <td>design studio</td>
+                    <td>physics</td>
                 </tr>
               </table>
+          </div>
           </div>
           </p>
         </div>
@@ -306,6 +358,19 @@
     <a href="mailto:mcneilly@mit.edu">mcneilly@mit.edu</a> | <a href="https://www.linkedin.com/in/amcneilly/ target="
       _blank">LinkedIn</a> | <a href="https://twitter.com/mcneilly_alex" target="_blank">Twitter</a>
   </div>
+
+  <script>
+      var coll = document.getElementsByClassName("collapsible")[0];
+      coll.addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+              content.style.maxHeight = null;
+          } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+          } 
+      });
+  </script>
 
 </body>
 
