@@ -8,26 +8,28 @@
   <link href="favicon.ico" rel="apple-touch-icon" />
   <title>Essays</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Alice&display=swap');
 
     body {
       font-family: Albert Sans, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #ffffff;
-      color: #121212;
+      background-color: #eae6e3;
+      color: #312d2a;
       display: flex;
       flex-direction: row;
     }
-
+    a {
+      text-decoration: none;
+      color: #312d2a;
+    }
     nav {
       width: 200px;
       height: 100%;
       padding: 16px;
-      background-color: #ECFFFD;
+      background-color: #b9916c;
       position: fixed;
-      border-right: 1px solid #e0e0e0;
-      box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 2px 0px 5px rgba(37, 29, 22, 0.1);
     }
 
     nav ul {
@@ -38,14 +40,14 @@
     }
 
     nav li {
-      border-bottom: 1px solid #e0e0e0;
       margin-bottom: 5px;
     }
 
     nav a {
       text-decoration: none;
-      color: #121212;
-      font-weight: 300;
+      color: #312d2a;
+      font-weight: normal;
+      font-family: Albert Sans, sans-serif;
       display: block;
       padding: 10px;
       margin: -1px;
@@ -54,7 +56,7 @@
 
     nav a:hover {
       padding-left: 20px;
-      background-color: #e0f7fa;
+      background-color: #82664c;
     }
 
     .contact-info {
@@ -63,12 +65,12 @@
       left: 10px;
       font-size: 0.9em;
       padding: 10px;
-      border: 1px solid #e0e0e0;
-      background-color: #121212;
+      border: 1px solid #ffffff;
+      background-color: #000000;
       color: white;
-      z-index: 10;
+      z-index: 100;
       font-weight: 300;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 5px rgba(127, 127, 127, 0.1);
     }
 
     .contact-info a {
@@ -89,7 +91,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      border-bottom: 1px solid #e0e0e0;
       margin-bottom: 20px;
       padding-bottom: 20px;
       flex-direction: row;
@@ -108,19 +109,24 @@
       font-size: 2.5em;
       margin-block-start: 0.1em;
       margin-block-end: 0.1em;
+      font-family: Alice, Times New Roman, serif;
+      padding-left: 20px;
+      letter-spacing: 0.04em;
     }
 
     .bio-text p {
       font-size: 1em;
+      margin: 0;
+      line-height: 1.5;
     }
 
     .bio img {
       flex: 1;
-      border-radius: 2%;
+      border-radius: 5%;
       object-fit: cover;
       max-width: 25vw;
       max-height: 50vh;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(127, 127, 127, 0.1);
       align-self: flex-start;
     }
 
@@ -128,7 +134,6 @@
       text-align: center;
       padding: 16px;
       font-weight: 100;
-      border-top: 1px solid #e0e0e0;
     }
 
     table {
@@ -149,7 +154,6 @@
         height: auto;
         position: relative;
         border-right: none;
-        border-bottom: 1px solid #e0e0e0;
       }
 
       .content {
@@ -159,16 +163,16 @@
 
       .bio {
         flex-direction: column;
-        border-radius: 5%;
+        border-radius: 0%;
       }
 
       .bio img {
         flex: 1;
-        border-radius: 2%;
+        border-radius: 5%;
         object-fit: cover;
         max-width: 25vw;
         max-height: 50vh;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
         align-self: flex-start;
       }
     }
@@ -180,13 +184,12 @@
   <nav>
     <ul>
       <li><a href="index.html">👋 Me</a></li>
-      <li><a href="essays.html">📝 <b>Essays</b></a></li>
+      <li><a href="essays.html">📝 <b style="color: #312d2a; font-weight: bold; font-family: Alice, Times New Roman, serif;">Essays</b></a></li>
       <li><a href="education.html">🎓 Education</a></li>
       <li><a href="alexander_mcneilly_resume.pdf">🦖 Resume</a></li>
       <li><a href="projects.html">🔧 Projects</a></li>
-      <li><a href="research.html">🔬 Research</a></li>
     </ul>
-    <p style="font-weight:600; font-size: 0.75em; color: #999999; margin-left: 5px;"><br> © 2023 alex mcneilly</p>
+    <p style="font-weight:600; font-size: 0.75em; margin-left: 5px; font-family: Alice, Times New Roman, serif;"><br> © 2023 alex mcneilly</p>
   </nav>
 
   <div class="content">
