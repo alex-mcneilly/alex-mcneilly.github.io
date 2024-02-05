@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+body {
+    font-family: "Albert Sans", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: #121212;
+    font-weight: 200;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    background: #121212;
+    color: #fff;
+    padding: 1.5em;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+header nav {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    font-family: 'DM Mono', monospace;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1;
+    margin-top: 1em;
+}
+
+.profile {
+    flex: 1;
+}
+
+.profile p {
+    margin: 10px 0;
+}
+
+.profile-img {
+    width: 30vh;
+    border-radius: 100%;
+    margin-left: 4em;
+    filter: grayscale(100%);
+    margin-top: 2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5em 1.0em;
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    font-size: 0.85em;
+    font-family: 'DM Mono', monospace;
+}
+
+.note-items {
+    margin-left: 1.5em;
+}
+
+.projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: transparent;
+}
+
+.projects-table td {
+    vertical-align: top;
+    padding: 10px;
+    border: none;
+}
+
+.project-image {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.project-name {
+    max-width: 150px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+.project-description {
+    max-width: 200px;
+    white-space: normal;
+    font-size: 0.75em;
+}
+
+.project-actions .button {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.project-actions .button:last-child {
+    margin-bottom: 0;
+}
