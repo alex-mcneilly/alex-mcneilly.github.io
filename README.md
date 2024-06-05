@@ -2,9 +2,7 @@
 
 ![alexander mcneilly](mcneilly.png)
 
-I like exploring software, design, and 3D graphics.
-
-Currently, I study CS at MIT. Also building [Splocks](http://splocks.org/).
+Exploring performance engineering, machine learning, and computer graphics in the browser.
 
 ### Contact
 
