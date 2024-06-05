@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+html {
+    --header-font: "Crimson Pro";
+    --body-font: "Figtree", sans-serif;
+    --white: #fafaff;
+    --body: #1a1a1a;
+    --subtext: #5f5f5f;
+    --grey-600: #707070;
+    --grey-700: #4d4d4d;
+    --highlight: #252525;
+    --bg-alt: #212121;
+    --bg: #ededed;
+    --black: #050500;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg);
+    color: var(--body);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 1em;
+    display: flex;
+    justify-content: left;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-family: var(--header-font);
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+}
+
+#about {
+    max-width: 27.5em;
+    align-items: left;
+    margin: 0;
+    text-align: left;
+}
+
+h1 {
+    font-family: var(--header-font);
+    font-size: 2em;
+    color: var(--highlight);
+    margin-top: 0.125em;
+    margin-bottom: 0.25em;
+}
+
+h3 {
+    font-family: var(--header-font);
+    font-size: 1.25em;
+    color: var(--highlight);
+}
+
+p {
+    font-size: 1em;
+    color: var(--subtext);
+}
+
+.social-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--subtext);
+}
+
+.social-link:hover {
+    cursor: pointer;
+    color: var(--black);
+}
+
+.selected {
+    font-weight: bold;
+    color: var(--subtext);
+}
+
+.selected:hover {
+    cursor: auto;
+    text-decoration: none;
+}
+
+.experience {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.experience img {
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 1em;
+}
+
+.experience div {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience h2 {
+    color: var(--subtext);
+    font-size: 1em;
+    margin: 0;
+}
+
+.experience p {
+    font-size: 1em;
+    color: #a0a0a0;
+    margin-top: 0.125em;
+    margin-bottom: 0.125em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.chip {
+    display: inline-block;
+    background: #dadada;
+    font-weight: 700;
+    font-size: 12px;
+    color: #5f5f5f;
+    border-radius: 7px;
+    margin: 0 0.5em;
+    padding: 6px;
+    padding-bottom: 4px;
+    line-height: 0.9em;
+}
+
+.note {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.note img {
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 1em;
+}
+
+.note div {
+    display: flex;
+    flex-direction: column;
+}
+
+.note h2 {
+    color: var(--subtext);
+    font-size: 1em;
+    margin: 0;
+}
+
+.note p {
+    font-size: 1em;
+    color: #a0a0a0;
+    margin-top: 0.125em;
+    margin-bottom: 0.125em;
+    margin-left: 0;
+    margin-right: 0;
+}
