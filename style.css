@@ -3,14 +3,14 @@
 html {
     --header-font: "Crimson Pro";
     --body-font: "Hanken Grotesk", sans-serif;
-    --white: #fafaff;
+    --white: #F7F8FA;
     --body: #1a1a1a;
-    --subtext: #5f5f5f;
+    --subtext: #4E4E4E;
     --grey-600: #707070;
     --grey-700: #4d4d4d;
     --highlight: #252525;
     --bg-alt: #212121;
-    --bg: #ededed;
+    --bg: #F7F8FA;
     --black: #050500;
 }
 
