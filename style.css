@@ -1,23 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
-html {
-    --header-font: "Crimson Pro";
+:root {
+    --header-font: "Crimson Pro", serif;
     --body-font: "Hanken Grotesk", sans-serif;
-    --white: #F7F8FA;
-    --body: #1a1a1a;
-    --subtext: #4E4E4E;
+    --mono-font: "IBM Plex Mono", monospace;
+    --bg-color: #E3E0E7;
+    --text-dark: #282128;
+    --text-body: #676269;
+    --text-nav: #868088;
+    --text-light: #A5A1A8;
     --grey-600: #707070;
-    --grey-700: #4d4d4d;
-    --highlight: #252525;
-    --bg-alt: #212121;
-    --bg: #F7F8FA;
-    --black: #050500;
 }
 
 body {
     font-family: var(--body-font);
-    background-color: var(--bg);
-    color: var(--body);
+    background-color: var(--bg-color);
+    color: var(--text-dark);
     margin: 0;
     padding: 0;
 }
@@ -25,6 +23,9 @@ body {
 nav {
     background-color: transparent;
     padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -32,7 +33,6 @@ nav ul {
     padding: 0;
     margin: 0 1em;
     display: flex;
-    justify-content: left;
 }
 
 nav ul li {
@@ -40,7 +40,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #a0a0a0;
+    color: var(--text-nav);
     text-decoration: none;
     font-family: var(--header-font);
     font-size: 1em;
@@ -48,64 +48,57 @@ nav ul li a {
 
 nav ul li a:hover {
     cursor: pointer;
-    text-decoration: underline;
+    color: var(--text-dark);
+    text-decoration: none;
 }
 
 main {
-    padding: 2em;
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-right: 2em;
+    padding-bottom: 2em;
 }
 
 #about {
+    width: 100%;
     max-width: 27.5em;
-    align-items: left;
-    margin: 0;
+    margin-left: 0;
     text-align: left;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.intro svg {
+    margin-right: 1em;
+    filter: drop-shadow(2px 2px 2px rgb(0 0 0 / 0.15));
 }
 
 h1 {
     font-family: var(--header-font);
     font-size: 2em;
-    color: var(--highlight);
-    margin-top: 0.125em;
-    margin-bottom: 0.25em;
-}
-
-h3 {
-    font-family: var(--header-font);
-    font-size: 1.25em;
-    color: var(--highlight);
+    color: var(--text-dark);
+    margin: 0;
 }
 
 p {
     font-size: 1em;
-    color: var(--subtext);
+    color: var(--text-body);
 }
 
-.social-link {
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--subtext);
-}
-
-.social-link:hover {
-    cursor: pointer;
-    color: var(--black);
-}
-
-.selected {
-    font-weight: bold;
-    color: var(--subtext);
-}
-
-.selected:hover {
-    cursor: auto;
-    text-decoration: none;
+hr {
+    border: 1px solid #CCCCCC;
 }
 
 .experience {
     display: flex;
-    align-items: center;
-    margin-top: 2em;
+    align-items: flex-start;
+    margin-top: 1em;
+    position: relative;
+    padding-right: 7em;
 }
 
 .experience img {
@@ -117,21 +110,48 @@ p {
 .experience div {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .experience h2 {
-    color: var(--subtext);
+    color: var(--text-dark);
     font-size: 1em;
     margin: 0;
 }
 
 .experience p {
     font-size: 1em;
-    color: #a0a0a0;
-    margin-top: 0.125em;
-    margin-bottom: 0.125em;
-    margin-left: 0;
-    margin-right: 0;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.time {
+    font-family: var(--body-font);
+    font-size: 0.625em;
+    color: #c1bcc4;
+    opacity: 0;
+    font-weight: 400;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7em;
+    text-align: right;
+}
+
+.experience:hover .time {
+    opacity: 1;
+}
+
+.selected {
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.selected:hover {
+    cursor: auto;
+    text-decoration: none;
 }
 
 .chip {
@@ -165,16 +185,42 @@ p {
 }
 
 .note h2 {
-    color: var(--subtext);
+    color: var(--text-dark);
     font-size: 1em;
     margin: 0;
 }
 
 .note p {
     font-size: 1em;
-    color: #a0a0a0;
+    color: var(--text-light);
     margin-top: 0.125em;
     margin-bottom: 0.125em;
     margin-left: 0;
     margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin: 0.5em 1em;
+    }
+
+    #about {
+        max-width: 100%;
+    }
+
+    .experience {
+        padding-right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .time {
+        transform: none;
+        opacity: 1;
+    }
 }
