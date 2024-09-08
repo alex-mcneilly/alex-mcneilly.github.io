@@ -2,91 +2,207 @@
 <html lang="en">
 
 <head>
-  <link href="assets/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-  <link href="style/assets/favicon.ico" rel="apple-touch-icon" />
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>alexander mcneilly</title>
-
-  <meta content="I'm Alexander Mcneilly. I like software, design, and 3D graphics." name="description" />
-  <meta content="mcneilly" property="og:title" />
-  <meta content="I'm Alexander Mcneilly. I like software, design, and 3D graphics." property="og:description" />
-
-  <meta content="mcneilly" property="twitter:title" />
-  <meta content="I'm Alexander Mcneilly. I like software, design, and 3D graphics." property="twitter:description" />
-  <meta property="og:type" content="website" />
-
-  <link rel="stylesheet" href="style.css">
+    <link href="assets/ashland-logo.svg" rel="shortcut icon" type="image/x-icon" />
+    <link href="style/assets/favicon.ico" rel="apple-touch-icon" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alexander mcneilly</title>
+    <meta content="I'm Alexander Mcneilly. I like software, design, and 3D graphics." name="description" />
+    <meta content="mcneilly" property="og:title" />
+    <meta content="I'm Alexander Mcneilly. I like software, design, and 3D graphics." property="og:description" />
+    <meta content="mcneilly" property="twitter:title" />
+    <meta content="I'm Alexander Mcneilly. I like software, design, and 3D graphics." property="twitter:description" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="" class="selected">about</a></li>
-      <li><a href="./notes/">notes</a></li>
-      <li><a href="./projects/">projects</a></li>
-      <li><a href="https://github.com/alex-mcneilly/">github</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section id="about">
-      <img src="assets/about/snowday.jpg" width="100%" height="auto"/>
-      <br><br>
-      <h1>alexander mcneilly</h1>
-      <p>Exploring performance engineering, machine learning, and computer graphics in the browser.<br><br><br><a
-          href="alexander_mcneilly_resume.pdf" class="social-link">resume [PDF]</a>&nbsp;&nbsp;&nbsp;<span
-          style="color: #dadada; font-weight: bolder">|</span>&nbsp;&nbsp;&nbsp;<a href="mailto:mcneilly@mit.edu"
-          class="social-link">last [at] mit [dot] edu</a></p>
-      <hr style="border: 1px solid #dadada;" />
-      <!--
-      <div class="experience" style="margin-top: 1em;">
-        <img src="assets/about/csail.svg" alt="CSAIL">
-        <div>
-          <h2>CSAIL, Software Design Group<span class="chip">Fall 2024 — Present</span></h2>
-          <p>Machine Learning Research Intern</p>
-        </div>
-      </div>
-      -->
-      <div class="experience" style="margin-top: 1em;">
-        <img src="assets/about/mitit-logo.svg" alt="MITIT">
-        <div>
-          <h2>MIT Informatics Tournament <span class="chip">Fall 2023 — Present</span></h2>
-          <p>Lead Software Engineer</p>
-        </div>
-      </div>
-      <div class="experience" style="margin-top: 1em;">
-        <img src="assets/about/mit-step-lab.svg" alt="MIT STEP Lab">
-        <div>
-          <h2>MIT STEP Lab <span class="chip">Summer 2024</span></h2>
-          <p>Software Engineering Intern</p>
-        </div>
-      </div>
-      <div class="experience" style="margin-top: 1em;">
-        <img src="assets/about/medialab.svg" alt="MIT Media Lab"
-          style="width: 1.75em; height: auto; margin-right: 1.5em; margin-left: 0.25em">
-        <div>
-          <h2>MIT Media Lab <span class="chip">Feb 2024 — Mar 2024</span></h2>
-          <p>Software Engineering Intern</p>
-        </div>
-      </div>
-      <div class="experience" style="margin-top: 1em;">
-        <img src="assets/about/janestreet.svg" alt="Jane Street">
-        <div>
-          <h2>Jane Street <span class="chip">Jan 2024</span></h2>
-          <p>IN FOCUS (Software Engineering)</p>
-        </div>
-      </div>
-      <div class="experience" style="margin-top: 3.5em;">
-        <img src="assets/about/mit.svg" alt="MIT" style="height: auto;">
-        <div>
-          <h2>Massachusetts Institute of Technology</h2>
-          <p>B.S. in Mathematics with Computer Science</p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <script src="scripts.js"></script>
+    <nav>
+        <ul class="left-nav">
+            <li><a href="" class="selected">about</a></li>
+            <li><a href="./notes/">notes</a></li>
+            <li><a href="./projects/">projects</a></li>
+            <li><a href="./design/">design</a></li>
+            <li><a href="./aesthetics/">aesthetics</a></li>
+        </ul>
+        <ul class="right-nav">
+            <li><a href="mailto:mcneilly@mit.edu">mcneilly [at] mit [dot] edu</a></li>
+            <li><a href="https://github.com/alex-mcneilly/">github</a></li>
+            <li><a href="alexander_mcneilly_resume.pdf">resume</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <img src="assets/about/snowday.jpg" alt="Snowy landscape" width="100%" height="auto" />
+            <div class="intro">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <linearGradient id="a">
+                        <stop offset="0" stop-color="#f1f2f2" />
+                        <stop offset="1" stop-color="#bcbec0" />
+                    </linearGradient>
+                    <radialGradient id="b" cx="21.2973" cy="20.2228" gradientUnits="userSpaceOnUse" r="18.5752"
+                        xlink:href="#a" />
+                    <linearGradient id="c">
+                        <stop offset=".4804" stop-color="#1b75bb" />
+                        <stop offset=".9888" stop-color="#2b3990" />
+                    </linearGradient>
+                    <linearGradient id="d" gradientUnits="userSpaceOnUse" x1="18.4465" x2="17.7587" xlink:href="#c"
+                        y1="25.3764" y2="23.4851" />
+                    <linearGradient id="e" gradientUnits="userSpaceOnUse" x1="20.4576" x2="19.7664" xlink:href="#c"
+                        y1="25.3833" y2="23.4824" />
+                    <linearGradient id="f" gradientUnits="userSpaceOnUse" x1="22.4515" x2="21.7602" xlink:href="#c"
+                        y1="25.3833" y2="23.4824" />
+                    <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="20.9498" x2="19.4872" xlink:href="#c"
+                        y1="26.3058" y2="18.1949" />
+                    <linearGradient id="h" gradientUnits="userSpaceOnUse" x1="28.6692" x2="4.02047" xlink:href="#c"
+                        y1="19.9164" y2="12.9164" />
+                    <radialGradient id="i" cx="18.2973" cy="7.93893" gradientUnits="userSpaceOnUse" r="10.7049"
+                        xlink:href="#a" />
+                    <linearGradient id="j">
+                        <stop offset=".00558659" stop-color="#513468" />
+                        <stop offset="1" stop-color="#1c1c1c" />
+                    </linearGradient>
+                    <linearGradient id="k" gradientUnits="userSpaceOnUse" x1="10.1686" x2="15.695" xlink:href="#j"
+                        y1="5.58067" y2="3.20954" />
+                    <linearGradient id="l" gradientUnits="userSpaceOnUse" x1="17.0977" x2="8.99545" xlink:href="#c"
+                        y1="3.93816" y2="6.88076" />
+                    <linearGradient id="m" gradientUnits="userSpaceOnUse" x1="10.0424" x2="17.4" xlink:href="#j"
+                        y1="7.8305" y2="4.67369" />
+                    <linearGradient id="n" gradientUnits="userSpaceOnUse" x1="15.7388" x2="21.0084" y1="11.5335"
+                        y2="11.5335">
+                        <stop offset="0" stop-color="#ff2c00" />
+                        <stop offset="1" stop-color="#ff8c00" />
+                    </linearGradient>
+                    <radialGradient id="o" cx="25.3003" cy="3.92415" gradientUnits="userSpaceOnUse" r="11.9438"
+                        xlink:href="#a" />
+                    <radialGradient id="p" cx="4.3003" cy="8.92416" gradientUnits="userSpaceOnUse" r="11.9438"
+                        xlink:href="#a" />
+                    <radialGradient id="q" cx="27.0926" cy="9.5142" gradientUnits="userSpaceOnUse" r="6.3748"
+                        xlink:href="#a" />
+                    <radialGradient id="r" cx="6.16464" cy="4.5351" gradientUnits="userSpaceOnUse" r="6.3748"
+                        xlink:href="#a" />
+                    <radialGradient id="s" cx="4.02655" cy="19.5204" gradientUnits="userSpaceOnUse" r="6.3748"
+                        xlink:href="#a" />
+                    <radialGradient id="t" cx="28.1618" cy="22.5351" gradientUnits="userSpaceOnUse" r="6.3748"
+                        xlink:href="#a" />
+                    <g stroke="#433b6b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+                        <path d="m6.92004 15.9948v-2.42" />
+                        <path d="m5 14.6049 5.16 4.51" />
+                        <path d="m25.95 15.9948v-2.42" />
+                        <path d="m27.87 14.6049-5.17 4.51" />
+                        <path d="m24.7 17.5449h2.24" />
+                        <path d="m5.87 17.5349h2.23999" />
+                    </g>
+                    <path
+                        d="m26.66 23.2349c0 5.63-4.57 6.8-10.2 6.8s-10.19999-1.17-10.19999-6.8 4.56999-10.2 10.19999-10.2 10.2 4.57 10.2 10.2z"
+                        fill="url(#b)" />
+                    <path
+                        d="m17.95 25.0149c-.27 0-.49-.22-.49-.49v-1.02c0-.27.22-.49.49-.49s.49.22.49.49v1.02c0 .27-.22.49-.49.49z"
+                        fill="url(#d)" />
+                    <path
+                        d="m19.96 25.0249c-.27 0-.49-.22-.49-.49v-1.03c0-.27.22-.49.49-.49s.49.22.49.49v1.03c0 .26-.22.49-.49.49z"
+                        fill="url(#e)" />
+                    <path
+                        d="m21.95 25.0249c-.27 0-.49-.22-.49-.49v-1.03c0-.27.22-.49.49-.49s.49.22.49.49v1.03c.01.26-.22.49-.49.49z"
+                        fill="url(#f)" />
+                    <path d="m21.8101 24.0349h-3.73c-.36 0-.65-.29-.65-.65v-5.35h5.03v5.35c0 .36-.29.65-.65.65z"
+                        fill="url(#g)" />
+                    <path
+                        d="m23.58 15.6949c0 3.93-3.19 4.39-7.12 4.39s-7.12003-.46-7.12003-4.39 3.19003-.64 7.12003-.64 7.12-3.29 7.12.64z"
+                        fill="url(#h)" />
+                    <path
+                        d="m23.54 12.1548c0 3.91-3.21 3.85-7.13 3.85s-7.04.07-7.04-3.85c0-3.91997 3.17-7.07997 7.08-7.07997s7.09 3.17 7.09 7.07997z"
+                        fill="url(#i)" />
+                    <path
+                        d="m16.49 5.04489-5.53 2.37-.78-1.81c-.43998-1.03.03-2.22 1.06-2.66l1.81-.78c1.03-.44 2.21.03 2.65 1.06z"
+                        fill="url(#k)" />
+                    <path
+                        d="m15.9101 5.29486-4.37 1.88c-.32.13-.69-.01-.83-.33l-.53-1.24 5.53-2.37.53 1.24c.13.31-.01.68-.33.82z"
+                        fill="url(#l)" />
+                    <path
+                        d="m17.03 5.61493-6.05 2.59c-.36.16-.78-.01-.94-.37-.14999-.36.02-.79.38-.94l6.04-2.59c.36-.16.78.01.94.38.16.35-.01.77-.37.93z"
+                        fill="url(#m)" />
+                    <path
+                        d="m14.96 9.84488c-.23 0-.41-.17-.41-.38v-.71c0-.21.19-.38.41-.38s.41.17.41.38v.71c0 .21-.18.38-.41.38z"
+                        fill="#433b6b" />
+                    <path
+                        d="m17.96 9.84488c-.23 0-.41-.17-.41-.38v-.71c0-.21.19-.38.41-.38s.41.17.41.38v.71c0 .21-.18.38-.41.38z"
+                        fill="#433b6b" />
+                    <path
+                        d="m20.61 11.1348-4.06-.42c-.45 0-.81.36-.81.81s.36.81.81.81l4.06-.42c.22 0 .4-.18.4-.4s-.18-.38-.4-.38z"
+                        fill="url(#n)" />
+                    <path
+                        d="m26.48 4.70485h-.2l.14-.14c.2-.21.2-.54 0-.75-.21-.21-.54-.21-.75 0l-.14.14v-.2c0-.29-.24-.53-.53-.53s-.53.24-.53.53v.2l-.14-.14c-.2-.21-.54-.21-.75 0s-.21.54 0 .75l.14.14h-.2c-.28 0-.52.24-.52.53s.24.53.53.53h.2l-.14.14c-.21.21-.21.54 0 .75.2.21.54.21.75 0l.14-.14v.2c0 .29.24.53.53.53s.53-.24.53-.53v-.21l.14.14c.2.21.54.21.75 0 .2-.21.2-.54 0-.75l-.14-.14h.2c.29 0 .53-.24.53-.53-.01-.28-.25-.52-.54-.52z"
+                        fill="url(#o)" />
+                    <path
+                        d="m5.48 9.70486h-.2l.14-.14c.2-.21.2-.54 0-.75-.21-.21-.54-.21-.75 0l-.14.15v-.2c0-.29-.24-.53-.53-.53s-.53.24-.53.53v.2l-.14-.15c-.2-.21-.54-.21-.75 0s-.21.54 0 .75l.15.14h-.2c-.29 0-.53.24-.53.53004 0 .29.24.53.53.53h.2l-.14.14c-.21.21-.21.54 0 .75.2.21.54.21.75 0l.14-.15v.2c0 .29.24.53.53.53s.53-.24.53-.53v-.2l.14.14c.2.21.54.21.75 0 .2-.21.2-.54 0-.75l-.15-.13h.2c.29 0 .53-.24.53-.53 0-.29004-.24-.53004-.53-.53004z"
+                        fill="url(#p)" />
+                    <path
+                        d="m27.72 9.9349h-.11l.08-.08c.11-.11.11-.29 0-.4s-.29-.11-.4 0l-.08.08v-.11c0-.15-.13-.28-.28-.28s-.28.13-.28.28v.11l-.08-.08c-.11-.11-.29-.11-.4 0s-.11.29 0 .4l.08.08h-.11c-.15 0-.28.13-.28.28s.13.28.28.28h.11l-.08.08c-.11.11-.11.29 0 .4s.29.11.4 0l.08-.08v.11c0 .15.13.28.28.28s.28-.13.28-.28v-.11l.08.08c.11.11.29.11.4 0s.11-.29 0-.4l-.08-.08h.11c.15 0 .28-.13.28-.28 0-.16-.12-.28-.28-.28z"
+                        fill="url(#q)" />
+                    <path
+                        d="m6.78994 4.95479h-.1l.08-.08c.11-.11.11-.29 0-.4s-.29-.11-.4 0l-.08.08v-.11c0-.15-.13-.28-.28-.28s-.28.13-.28.28v.11l-.08-.08c-.11-.11-.29-.11-.4 0s-.11.29 0 .4l.08.08h-.11c-.15 0-.28.13-.28.28s.13.28.28.28h.11l-.08.08c-.11.11-.11.29 0 .4s.29.11.4 0l.08-.08v.11c0 .15.13.28001.28.28001s.28-.13001.28-.28001v-.11l.08.08c.11.11.29.11.4 0s.11-.29 0-.4l-.08-.08h.11c.15 0 .28-.13.28-.28s-.13-.28-.29-.28z"
+                        fill="url(#r)" />
+                    <path
+                        d="m4.66005 19.9349h-.11l.08-.08c.11-.11.11-.29 0-.4s-.29-.11-.4 0l-.08.08v-.11c0-.15-.13-.28-.28-.28s-.28.13-.28.28v.11l-.08-.08c-.11-.11-.29-.11-.4 0s-.11.29 0 .4l.08.08h-.11c-.15 0-.28.13-.28.28s.13.28.28.28h.11l-.08.08c-.11.11-.11.29 0 .4s.29.11.4 0l.08-.08v.11c0 .15.13.28.28.28s.28-.13.28-.28v-.11l.08.08c.11.11.29.11.4 0s.11-.29 0-.4l-.08-.07h.11c.15 0 .28-.13.28-.28 0-.16-.13-.29-.28-.29z"
+                        fill="url(#s)" />
+                    <path
+                        d="m28.7901 22.9548h-.11l.08-.08c.11-.11.11-.29 0-.4s-.29-.11-.4 0l-.08.08v-.11c0-.15-.13-.28-.28-.28s-.28.13-.28.28v.11l-.08-.08c-.11-.11-.29-.11-.4 0s-.11.29 0 .4l.08.08h-.11c-.15 0-.28.13-.28.28s.13.28.28.28h.11l-.08.08c-.11.11-.11.29 0 .4s.29.11.4 0l.08-.08v.11c0 .15.13.28.28.28s.28-.13.28-.28v-.11l.08.08c.11.11.29.11.4 0s.11-.29 0-.4l-.08-.08h.11c.15 0 .28-.13.28-.28s-.12-.28-.28-.28z"
+                        fill="url(#t)" />
+                </svg>
+                <h1>alexander mcneilly</h1>
+            </div>
+            <p>Exploring performance engineering, machine learning, and computer graphics in the browser.</p>
+            <hr />
+            <div class="experience">
+                <img src="assets/about/csail.svg" alt="CSAIL">
+                <div>
+                    <h2>Software Design Group, MIT CSAIL<span class="time">FALL 2024 — </span></h2>
+                    <p>Software Engineering Intern</p>
+                </div>
+            </div>
+            <div class="experience">
+                <img src="assets/about/mitit-logo.svg" alt="MITIT">
+                <div>
+                    <h2>MIT Informatics Tournament <span class="time">FALL 2023 — </span></h2>
+                    <p>Lead Software Engineer</p>
+                </div>
+            </div>
+            <div class="experience">
+                <img src="assets/about/mit-step-lab.svg" alt="MIT STEP Lab">
+                <div>
+                    <h2>MIT STEP Lab <span class="time">SUMMER 2024</span></h2>
+                    <p>Software Engineering Intern</p>
+                </div>
+            </div>
+            <div class="experience">
+                <img src="assets/about/medialab.svg" alt="MIT Media Lab"
+                    style="width: 1.75em; height: auto; margin-right: 1.5em; margin-top: 8px; margin-left: 0.25em">
+                <div>
+                    <h2>MIT Media Lab <span class="time">SPRING 2024</span></h2>
+                    <p>Software Engineering Intern</p>
+                </div>
+            </div>
+            <div class="experience">
+                <img src="assets/about/janestreet.svg" alt="Jane Street">
+                <div>
+                    <h2>Jane Street <span class="time">WINTER 2024</span></h2>
+                    <p>IN FOCUS (Software Engineering)</p>
+                </div>
+            </div>
+            <div class="experience" style="margin-top: 2.75em; padding-right: 0em;">
+                <img src="assets/about/mit.svg" alt="MIT" style="height: auto; margin-top: 10px">
+                <div>
+                    <h2>Massachusetts Institute of Technology <span class="time">2022 — 2027</span></h2>
+                    <p>B.S. in Computer Science and Mathematics</p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
