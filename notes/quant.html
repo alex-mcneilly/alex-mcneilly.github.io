@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flirting With Quants</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 2.5em;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        opacity: 0;
+        animation: fadeIn 1s ease-in forwards;
+        background-color: #f3f3f3ff;
+        color: #666666;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      h1 {
+        font-family: "Crimson Pro", serif;
+        font-size: 1.75em;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 0.125em;
+      }
+
+      h2 {
+        font-family: "Crimson Pro", serif;
+        font-size: 1.25em;
+        font-weight: 400;
+        margin-top: 0;
+      }
+
+      p {
+        margin: 0;
+        font-size: 0.9em;
+        line-height: 1.25;
+      }
+
+      p a {
+        color: inherit;
+        font-weight: 600;
+      }
+
+      ul li {
+        font-size: 0.9em;
+      }
+
+      ul li a {
+        text-decoration: underline;
+        color: inherit;
+        font-weight: 600;
+      }
+
+      ul {
+        padding-left: 1em;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .resume-column,
+      .blog-column {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .job-entry {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .job-entry a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .logo {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+      }
+
+      .logo img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .job-details {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .company-name {
+        font-weight: 400;
+        margin: 0;
+        font-size: 1.125em;
+        font-family: "Crimson Pro", serif;
+      }
+
+      .role {
+        color: #999999;
+        margin: 0;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .contact-info {
+        margin-bottom: 24px;
+        color: #666;
+        font-family: "Source Code Pro", Courier, monospace;
+        font-weight: 600;
+      }
+
+      .contact-info a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .contact-info a:hover {
+        color: #000000;
+      }
+
+      .blog-entry {
+        margin-bottom: 1em;
+      }
+
+      .blog-entry:hover {
+        color: black;
+        cursor: pointer;
+      }
+
+      .blog-title {
+        margin: 0;
+        font-weight: 400;
+        font-size: 1.125em;
+        font-family: "Crimson Pro", serif;
+      }
+
+      .blog-date {
+        color: #999999;
+        font-size: 14px;
+        margin: 4px 0 0 0;
+        font-weight: 400;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+
+        body {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <p>
+          <a
+            href="../index.html"
+            style="color: inherit; text-decoration: none; font-size: 2em"
+            >↤</a
+          >
+        </p>
+        <hr style="border: 0.25px solid #999999; margin-bottom: 1.25em" />
+        <h1>Flirting With Quants</h1>
+        <p style="margin-bottom: 2em; font-size: 0.8em; color: #999999">
+          September 13, 2024
+        </p>
+        <p>The fluorescent lights of the Sloan study room flickered.</p>
+        <br>
+        <p>
+          They buzzed, casting an eerie glow over the sea of notebooks and
+          energy drinks strewn across the desk. It was liminal 3AM July night
+          (morning?), and I found myself staring blankly at yet another
+          probability problem. It was taunting me. It mocked my efforts. This
+          scene had become too familiar over the months prior. Why? Because I
+          wanted to be a quant.
+        </p>
+        <br>
+        <p>
+          Quant was an obsession for me. My older friends, and the people I
+          followed online, already worked or secured coveted positions at these
+          quant firms. I wanted in, too. I heard about all of the perks: the
+          free food, unlimited Diet Dr. Pepper, gym, housing, baseball games,
+          and merch. I drooled over the salaries and that sweet, sweet sign-on
+          bonus. Seeing the success of my older friends and liking the thought
+          of playing poker all day for a summer (oversimplification) motivated
+          me to get a quant job.
+        </p>
+        <br>
+        <p>
+          But it wasn't just about that juicy sign-on bonus and the prestige of
+          saying I worked in finance. Deep down, a part of me hoped that landing
+          a quant job would finally silence the nagging voice of inadequacy that
+          had taken residence in my head last year. The friend group that I was
+          in last year was toxic. All of them were very intelligent and
+          overachieving. The problem was that they were snobby about it. It
+          didn't support a lot of confidence in myself and made me feel like an
+          impostor. A fraud even. Quant, in that context, became a lifeline. A
+          chance to prove my worth.
+        </p>
+        <br>
+        <p>
+          So I dove in, head first and eyes wide open. Nights blurred into days
+          as I scoured every resource I could find—Glassdoor, Reddit,
+          3point1acres, WallStreetOasis, Blind—hunting for the secret formula to
+          get into quant. After months of hard work, some successes, and some
+          failures, here's what I found about preparing for and getting into
+          quant:
+        </p>
+        <br>
+        <p>
+          First off, I don't know if I am qualified or not to give advice. My
+          background is atypical. I have zero competitive math background, have
+          never done the Putnam, and all of my prior experience is in software
+          engineering. These are just my thoughts and how I prepared. Please
+          take everything with a grain of salt and take this guide more as a
+          list of suggestions and possible resources to use to prepare for
+          quant. I also will talk about why I personally thought quant wasn't
+          right for me after doing all of this.
+        </p>
+        <br>
+        <p>
+          To begin, a lot of online resources and prep books are stupid,
+          bloated, or irrelevant. There are only a handful of resources that
+          actually helped me. Also, preparing for quant and SWE will get you
+          nowhere. This was probably my biggest mistake. I thought I could do
+          both. I couldn't, and you probably can't either. The mental models you
+          have when preparing for interviews in quant vs. interviews in SWE, are
+          very different, and it's best to refine one at the expense of the
+          other.
+        </p>
+        <br>
+        <h2>Poker</h2>
+
+        <p>
+          Learn poker and play <b>lots of it</b>. Lots of quant questions, at
+          their core, are similar to poker. Many quant questions ask if or how
+          much money you should put into a game given some information. A lot of
+          times this game is a card game like poker. The pace of quant
+          interviews is too fast for you to really sit down and think about
+          <i>exact</i> pot odds or probabilities.<br /><br />You have to build
+          up your intuition and reaction time to respond and get "hunches" or
+          "gut feelings" that you think are correct. This can most effectively
+          be built up by playing lots of poker and practicing poker theory while
+          playing quick games against an opponent. Some resources and terms that
+          helped me build my poker intuition were:
+        </p>
+
+        <ul>
+          <li>
+            calculating <b>pot odds</b>, <b>equity</b>, <b>implied odds</b>,
+            <b>pot share</b>, <b>expected value</b>, and <b>hand ranges</b>
+          </li>
+          <li><b>Kelly-criterion</b> for managing risk</li>
+          <li>
+            <a
+              href="https://youtube.com/playlist?list=PLUl4u3cNGP61kfOW3zAIfpNhf0piao8oo&si=6htmD2xRUGjIob12"
+              >this MIT OCW playlist on poker theory</a
+            >
+          </li>
+          <li>
+            <a href="https://hopkinspokercourse.com/"
+              >this Poker Theory course from Johns Hopkins</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@FindingEquilibrium"
+              >this YouTube channel</a
+            >
+          </li>
+        </ul>
+        <br>
+        <h2>Puzzles</h2>
+
+        <p>
+          In addition to building poker intuition, building puzzle intuition
+          helped a lot. Brainteasers aren't really asked a lot anymore in quant
+          questions, although they do pop up sometimes (based on other friends'
+          accounts). You can kind of think of solving puzzles as a more passive
+          study method.<br /><br />When you are bored of actually practicing
+          quant questions, just do some of these puzzles or watch some of these
+          videos to still build up your intuition. Although you won't usually be
+          asked these kinds of brainteasers, thinking about the solutions, even
+          if they are unexpected or counterintuitive, can allow you to apply
+          those techniques on interview problems. Some resources and videos that
+          helped me build my puzzle intuition were:
+        </p>
+
+        <ul>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=N5vJSNXPEwA&list=PLJicmE8fK0EiFRt1Hm5a_7SJFaikIFW30"
+              >Can You Solve This Riddle videos</a
+            >
+          </li>
+          <li>
+            Chapter 1 of
+            <a
+              href="https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662"
+              >the Green Book</a
+            >
+          </li>
+          <li>
+            <a href="https://www.cs.cmu.edu/puzzle/"
+              >Carnegie Mellon resource</a
+            >
+          </li>
+          <li>
+            <a href="https://layton.fandom.com/wiki/Category:All_Puzzles"
+              >Professor Layton puzzles</a
+            >
+          </li>
+        </ul>
+        <br />
+        <p>
+          Studying for quant is <b>NOT</b> like studying for SWE. It involves
+          more intuition and much more practice than memorizing algorithms and
+          mapping LeetCode solutions onto a given question. There are four main
+          areas that get tested in quant: <b>arithmetic</b>, <b>probability</b>,
+          <b>applied trading questions</b>, and <b>market knowledge</b>. If you
+          build up your intuition and skills in these areas in this order, then
+          you should be well-prepared to do quant interviews
+        </p>
+        <br>
+        <h2>Arithmetic</h2>
+
+        <p>
+          For arithmetic, you need to know how to do harder mental arithmetic at
+          high speeds. This could be for a specific arithmetic test they have
+          you do, or for making calculations or approximations for certain
+          values in an interview. You should not move on to probability until
+          you are comfortable with fast mental arithmetic. Some resources that
+          helped me with my mental arithmetic are:
+        </p>
+        
+        <ul>
+          <li>
+            <a href="https://arithmetic.zetamac.com/">Zetamac</a> — try to get
+            80-90
+          </li>
+          <li>
+            <a href="https://speedmath.dev/">SpeedMath</a> — work up to mastery
+            level
+          </li>
+          <li>
+            <a href="https://rfqjobs.com/practice/math/"
+              >RFQ Jobs Math Practice</a
+            >
+          </li>
+          <li>
+            <a href="https://rankyourbrain.com/mental-math">Rank Your Brain</a>
+          </li>
+        </ul>
+        <br>
+        <h2>Probability</h2>
+
+        <p>
+          For probability, you need to know probability theory first. If you
+          have taken a discrete math class before, you probably already know
+          enough, but reviewing some of it with either the
+          <a
+            href="https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/"
+            >MIT Discrete Math OCW course</a
+          >
+          or a textbook is a good idea. You should focus on card problems and
+          dice problems. My friends and I encountered tons of dice problems, and
+          the card problems aren't hard if you already built up your poker
+          intuition. Here are some resources that you should go through to build
+          up your probability intuition:
+        </p>
+        
+        <ul>
+          <li>
+            <a
+              href="https://artofproblemsolving.com/store/book/competition-math"
+              >Competition math for middle schoolers</a
+            >
+            (literally what middle schoolers are doing this?)
+          </li>
+          <li>
+            Art of Problem Solving (<a
+              href="https://artofproblemsolving.com/wiki/index.php/Category:Probability_Problems"
+              >Probability</a
+            >
+            +
+            <a
+              href="https://artofproblemsolving.com/wiki/index.php/Combinatorics"
+              >Combinatorics</a
+            >)
+          </li>
+          <li>
+            <a
+              href="https://www.madandmoonly.com/doctormatt/mathematics/dice1.pdf"
+              >A Collection of Dice Problems</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://mbapreponline.wordpress.com/wp-content/uploads/2013/07/fifty_challenging_problems_in__2.pdf"
+              >50 Challenging Problems in Probability</a
+            >
+          </li>
+          <li>
+            Probability problems from the
+            <a
+              href="https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/"
+              >MIT Discrete Math course</a
+            >
+          </li>
+        </ul>
+        <br>
+        <h2>Trading Questions</h2>
+
+        <p>
+          For the applied trading questions, you should practice them until you
+          can instantly think of an approach or trick to solve the problem. This
+          is like the most "LeetCode" portion of interview prep, so memorizing
+          and understanding solutions should be sufficient. Here are some
+          resources that helped me prep:
+        </p>
+        
+        <ul>
+          <li>
+            <a
+              href="https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662"
+              >The Green Book</a
+            >
+            (mainly chapters 1, 2, and 4)
+          </li>
+          <li>
+            <a
+              href="https://www.amazon.com/Heard-Street-Quantitative-Questions-Interviews/dp/0994103867"
+              >The Lion Book</a
+            >
+            (mainly chapters 1, 3, and 4)
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1PF9J03dZn8kI_ckXDz0r6wkbMQqCo33t/view"
+              >Callum's guide</a
+            >
+          </li>
+        </ul>
+        <br>
+        <h2>Market Knowledge</h2>
+
+        <p>
+          For market knowledge, I didn't have a lot of trouble because I was
+          already familiar with economics and finance. However, if you have no
+          experience in these areas, definitely learn some trading-centric terms
+          and concepts. You don't have to understand the deep intricacies of the
+          market, but you should know when to apply finance-influenced common
+          sense to a trading scenario.
+          <a href="https://akunacapital.teachable.com/p/options101"
+            >Akuna Capital</a
+          >
+          has a good course that covers enough high level understanding of the
+          market and exchanges. You can also look on
+          <a
+            href="https://www.investopedia.com/terms/q/quantitative-trading.asp"
+            >Investopedia</a
+          >
+          for what specific terms like "market maker" mean.
+        </p>
+        <br>
+        <p>
+          For preparing for interviews, I made friends who had interviewed or
+          worked at those places to give me mock interviews. When they weren't
+          available, I did a back and forth with ChatGPT. I also looked at
+          Glassdoor and Blind for what trading interviews at those firms looked
+          like. I mainly applied to the firms that were sponsors of MITIT along
+          with a few smaller firms and even some firms that I later found out
+          were crypto-centric. Here is how I would rank the quant firms based on
+          my experience:
+        </p>
+        <br>
+        <p>
+          <strong>Sponsors MITIT + They Love Me:</strong> Hudson River Trading,
+          Jane Street, Jump Trading
+        </p>
+        <br>
+        <p>
+          <strong>Sponsors MITIT + They Don't Dislike Me:</strong> Five Rings,
+          Citadel, Tower Research Capital
+        </p>
+        <br>
+        <p>
+          <strong>Doesn't Sponsor MITIT + OK:</strong> Akuna, Arrowstreet,
+          Capula, Chicago Trading Company, DE Shaw, DRW, Flow Traders, IMC,
+          Optiver, Old Mission Capital, Radix, SIG, Two Sigma
+        </p>
+        <br>
+        <p>
+          <strong>Doesn't Sponsor MITIT + Huh:</strong> Acadian, AQR, Balyasny,
+          Belvedere, Bridgewater, Cubist, DV Trading, Garda, PDT Partners,
+          Peak6, Schonfeld, Wolverine Trading
+        </p>
+        <br>
+        <br>
+        <h2>A Realization</h2>
+
+        <p>
+          However, after months of intense practice and lots of awkward or
+          triumphant interviews, I started to feel my frosted quant dream
+          cookies crumble. The more I interviewed and learned more about the
+          kind of work you do as a quant, the more I realized I actually didn't
+          like it. The more I practiced probability and thought about poker, the
+          more I yearned for the creative, hands-on problem solving of SWE.
+          Quant trading and research, both of which I had convinced myself I
+          would grow to love, never actually stuck with me.
+        </p>
+        <br>
+        <p>
+          As I reflected on my past experiences—the UROPs that had always
+          gravitated towards software engineering, even when disguised as
+          research—a weight began to lift from my shoulders. I realized that in
+          my desperate quest for validation, I had nearly abandoned the field
+          that truly ignited my passion. The irony wasn't lost on me. In trying
+          to prove my worth, I had almost lost sight of what made me truly
+          valuable in the first place. I was treating SWE like a fallback
+          option; it was where my strengths and interests truly aligned. I
+          abandoned a good friend just to try and hang out with the popular
+          kids. I was Cady from Mean Girls.
+        </p>
+        <br>
+        <p>
+          So here I stand, at the end of a journey I never expected to take. The
+          quant preparation materials I amassed - the probability guides, the
+          market intuition resources, the arithmetic drills - they're still
+          valuable tools that have sharpened my technical skills. But they're
+          not a blueprint for my future.<br /><br />To the younger students who
+          might be interested in quant, I offer this; There's immense value in
+          pushing your boundaries and exploring new fields. Any new skill you
+          gain and the self-knowledge you acquire is never wasted. However,
+          don't let the allure of prestige or the fear of inadequacy drown out
+          your true passions.
+        </p>
+        <br>
+        <p>
+          I was not passionate about quant. As much as I wanted to be a trader,
+          I realized I wouldn't enjoy the actual work involved. You shouldn't do
+          something you wouldn't actually enjoy, right? If you don't know if you
+          want to do quant and you don't have the probability intuition or
+          arithmetic speed already, then I suggest you do something you are
+          truly passionate about. If you love probability and numbers and poker
+          and would love to do research and statistics, then definitely do
+          quant.
+        </p>
+        <br>
+        <p>
+          I have a new appreciation for SWE, and a near-addiction to coding now.
+          Trading or research at a quant firm might not be my destination, but
+          building the software those traders use at that firm might be.
+          Ultimately, trying and half-succeeding at getting into quant made me
+          more secure in being a SWE. My path forward is clearer, not because
+          it's easier, but because it's mine.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
