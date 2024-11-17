@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander Mcneilly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/ashland-favicon.ico" />
+    <style>
+      body {
+        margin: 0;
+        padding: 2.5em;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        opacity: 0;
+        animation: fadeIn 1s ease-in forwards;
+        background-color: #f3f3f3ff;
+        color: #666666;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      h1 {
+        font-family: "Crimson Pro", serif;
+        font-size: 1.75em;
+        font-weight: 400;
+        margin-bottom: 1.5em;
+        margin-top: 0;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .resume-column,
+      .blog-column {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .job-entry {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .job-entry a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .logo {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+      }
+
+      .logo img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .job-details {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .company-name {
+        font-weight: 400;
+        margin: 0;
+        font-size: 1.125em;
+        font-family: "Crimson Pro", serif;
+      }
+
+      .role {
+        color: #999999;
+        margin: 0;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .contact-info {
+        margin-bottom: 24px;
+        color: #666;
+        font-family: "Source Code Pro", Courier, monospace;
+        font-weight: 600;
+      }
+
+      .contact-info a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .contact-info a:hover {
+        color: #000000;
+      }
+
+      .blog-entry {
+        margin-bottom: 1em;
+      }
+
+      .blog-entry:hover {
+        color: black;
+        cursor: pointer;
+      }
+
+      .blog-entry a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .blog-title {
+        margin: 0;
+        font-weight: 400;
+        font-size: 1.125em;
+        font-family: "Crimson Pro", serif;
+      }
+
+      .blog-date {
+        color: #999999;
+        font-size: 14px;
+        margin: 4px 0 0 0;
+        font-weight: 400;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+
+        body {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Alexander R. Mcneilly</h1>
+
+    <div class="container">
+      <div class="resume-column">
+        <!--Jobs-->
+        <div class="job-entry">
+          <div class="logo">
+            <img src="assets/krea.svg" />
+          </div>
+          <div class="job-details">
+            <h3 class="company-name">Krea AI</h3>
+            <p class="role">Software Engineer</p>
+          </div>
+        </div>
+
+        <div class="job-entry">
+          <div class="logo">
+            <img src="assets/mitit.png" />
+          </div>
+          <div class="job-details">
+            <h3 class="company-name">MIT Informatics Tournament</h3>
+            <p class="role">Lead Software Engineer</p>
+          </div>
+        </div>
+
+        <div class="job-entry">
+          <div class="logo">
+            <img src="assets/csail.svg" />
+          </div>
+          <div class="job-details">
+            <h3 class="company-name">Software Design Group, MIT CSAIL</h3>
+            <p class="role">Software Engineering Intern</p>
+          </div>
+        </div>
+
+        <div class="job-entry">
+          <div class="logo">
+            <img src="assets/mit-step-lab.svg" />
+          </div>
+          <div class="job-details">
+            <h3 class="company-name">MIT STEP Lab</h3>
+            <p class="role">Software Engineering Intern</p>
+          </div>
+        </div>
+
+        <div class="job-entry">
+          <div class="logo">
+            <img src="assets/medialab.jpg" />
+          </div>
+          <div class="job-details">
+            <h3 class="company-name">MIT Media Lab</h3>
+            <p class="role">Software Engineering Intern</p>
+          </div>
+        </div>
+
+        <div class="job-entry">
+          <div class="logo">
+            <img src="assets/janestreet.svg" />
+          </div>
+          <div class="job-details">
+            <h3 class="company-name">Jane Street</h3>
+            <p class="role">IN FOCUS, Software Engineering</p>
+          </div>
+        </div>
+
+        <div class="job-entry" style="margin-top: 24px">
+          <div class="logo">
+            <img
+              src="assets/mit.svg"
+              style="margin-top: 25%; width: 100%; height: auto"
+            />
+          </div>
+          <div class="job-details">
+            <h3 class="company-name">Massachusetts Institute of Technology</h3>
+            <p class="role">B.S. in Mathematics with Computer Science</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-column">
+        <div class="contact-info">
+          <a href="mailto:mcneilly@mit.edu">mcneilly@mit.edu</a><br />
+          <a href="https://www.github.com/alex-mcneilly"
+            >github.com/alex-mcneilly</a
+          ><br />
+          <a href="https://www.x.com/mcneiilly">@mcneiilly</a><br />
+        </div>
+
+        <div class="blog-entry">
+          <a href="./notes/everything.html">
+            <h3 class="blog-title">Everything I Will Accomplish</h3>
+            <p class="blog-date">October 28, 2024</p>
+          </a>
+        </div>
+
+        <div class="blog-entry">
+          <a href="./notes/quant.html">
+            <h3 class="blog-title">Flirting with Quants</h3>
+            <p class="blog-date">September 13, 2024</p>
+          </a>
+        </div>
+
+        <div class="blog-entry">
+          <a href="./notes/liberty.html">
+            <h3 class="blog-title">Sweet Land of Liberty</h3>
+            <p class="blog-date">July 4, 2024</p>
+          </a>
+        </div>
+
+        <div class="blog-entry">
+          <a href="./notes/first-day.html">
+            <h3 class="blog-title">This Is The First Day Of My Life</h3>
+            <p class="blog-date">May 21, 2024</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
