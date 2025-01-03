@@ -1,6 +1,6 @@
 # Alexander R. Mcneilly
 
-Exploring performance engineering, machine learning, and computer graphics in the browser.
+Exploring high-performance systems, machine learning, and computer graphics.
 
 ### Contact
 
