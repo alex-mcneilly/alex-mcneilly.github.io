@@ -3,132 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alexander R. Mcneilly</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="./assets/ashland-favicon.ico" />
+    <title>mcneilly</title>
     <style>
-      @font-face {
-            font-family: "McnSerif";
-            src: url("Copy_of_Mcneilly_Serif.woff2") format("woff2");
-            font-weight: normal;
-            font-style: normal;
-        }
-
-      
+      @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap");
       body {
-        margin: 0;
-        padding: 2.5em;
-        font-family: "McnSerif", "Plus Jakarta Sans", sans-serif;
-        opacity: 0;
-        animation: fadeIn 1s ease-in forwards;
-        background-color: #f3f3f3ff;
-        color: #666666;
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-
-      h1 {
-        font-family: "McnSerif", "Crimson Pro", serif;
-        font-size: 1.75em;
-        font-weight: 400;
-        margin-bottom: 1.5em;
-        margin-top: 0;
-      }
-
-      .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      .resume-column,
-      .blog-column {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-      }
-
-      .job-entry {
-        display: flex;
-        align-items: flex-start;
-        gap: 12px;
-      }
-
-      .job-entry a {
-        text-decoration: none;
-        color: inherit;
-      }
-
-      .logo {
-        width: 40px;
-        height: 40px;
-        flex-shrink: 0;
-      }
-
-      .logo img {
-        width: 100%;
-        height: 100%;
-      }
-
-      .job-details {
-        display: flex;
-        flex-direction: column;
-        gap: 2px;
-      }
-
-      .company-name {
-        font-weight: 400;
-        margin: 0;
-        font-size: 1.125em;
         font-family: "Crimson Pro", serif;
+        margin: 3rem auto;
+        line-height: 1.25;
+        max-width: 40.5rem;
+        background-color: #ebeff7;
+        color: #304454;
       }
 
-      .role {
-        color: #999999;
-        margin: 0;
-        font-size: 14px;
-        font-weight: 400;
+      .profile-pic {
+        width: 8rem;
+        height: auto;
+        border-radius: 0.5rem;
       }
-
-      .contact-info {
-        margin-bottom: 24px;
-        color: #666;
-        font-family: "Source Code Pro", Courier, monospace;
-        font-weight: 600;
+      h1 {
+        margin-bottom: 0.75rem;
+        margin-top: 0.75rem;
+        font-weight: 300;
+        font-size: 2rem;
       }
-
-      .contact-info a {
-        color: inherit;
+      p {
+        margin-bottom: 1rem;
+        font-weight: 300;
+        font-size: 1.25rem;
+      }
+      a {
+        font-size: 1.25rem;
+        color: grey;
         text-decoration: none;
+        text-decoration: underline dotted;
+        text-underline-offset: 0.25em;
       }
 
-      .contact-info a:hover {
-        color: #000000;
+      .links {
+        margin-top: 2.5rem;
+      }
+      .links a {
+        font-size: 1.125rem;
+        margin-right: 1rem;
+      }
+      a:hover {
+        color: #304454;
+        background-color: rgba(0, 0, 0, 0.05);
       }
 
-      .blog-entry {
-        margin-bottom: 1em;
+      .prevent-select {
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
       }
     </style>
   </head>
   <body>
-    <h1>Alexander R. Mcneilly</h1>
-    <p>(aka Ashland)</p>
-      </div>
+    <img src="mcneilly.jpg" alt="Alexander R. Mcneilly" class="profile-pic" />
+    <h1 class="prevent-select">
+      Alexander Mcneilly
+    </h1>
+    <p class="prevent-select">
+      I'm a 3D human interested in high-performance systems, 3D machine
+      learning, spatial computing, and web graphics.
+    </p>
+    <p class="prevent-select">
+      Studying <a href="https://math.mit.edu">math at MIT</a>, head of software for <a href="https://mitit.org/">M(IT)^2</a>, building 3D products at <a href="https://www.krea.ai/stage/">Krea</a>, software research at <a href="https://sdg.csail.mit.edu">CSAIL</a>. 
+    </p>
+    <p class="prevent-select">
+      Please reach out through a mutual connection or friend.
+    </p>
+    <div class="links prevent-select">
+      <a href="resume.html">Resume</a>
+      <a href="https://github.com/alex-mcneilly">GitHub</a>
+      <a href="notes.html">Notes</a>
+      <a href="works.html">Works</a>
     </div>
   </body>
 </html>
