@@ -1,96 +1,208 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mcneilly</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Mcneilly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&display=swap" rel="stylesheet">
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap");
-      body {
-        font-family: "Crimson Pro", serif;
-        margin: 3rem;
-        line-height: 1.25;
-        max-width: 40.5rem;
-        background-color: #ebe9ec;
-        color: #2a2a2c;
-      }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-      .profile-pic {
-        width: 8rem;
-        height: auto;
-        border-radius: 0.5rem;
-      }
-      h1 {
-        margin-bottom: 0.75rem;
-        margin-top: 0.75rem;
-        font-weight: 300;
-        font-size: 2rem;
-      }
-      p {
-        margin-bottom: 1rem;
-        font-weight: 300;
-        font-size: 1.25rem;
-      }
-      a {
-        font-size: 1.25rem;
-        color: grey;
-        text-decoration: none;
-        text-decoration: underline dotted;
-        text-underline-offset: 0.25em;
-      }
+        body {
+            font-family: 'Crimson Pro', serif;
+            font-weight: 300;
+            font-size: 1.188rem;
+            line-height: 1.25;
+            background-color: #F6FAF8;
+            color: #3a3a3a;
+            padding: 2.5rem 1.25rem;
+        }
 
-      ul li {
-        font-size: 1.25rem;
-        font-weight: 300;
-      }
+        .wrapper {
+            max-width: 100%;
+            margin: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
 
-      ul {
-        padding-left: 1.5rem;
-      }
+        .container {
+            max-width: 30rem;
+            width: 100%;
+            text-align: left;
+        }
 
-      .links {
-        margin-top: 2.5rem;
-      }
-      .links a {
-        font-size: 1.125rem;
-        margin-right: 1rem;
-      }
-      a:hover {
-        color: #304454;
-        background-color: rgba(0, 0, 0, 0.05);
-      }
+        .profile-image {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            margin-bottom: 1.75rem;
+        }
 
-      .prevent-select {
-        -webkit-user-select: none; /* Safari */
-        -ms-user-select: none; /* IE 10 and IE 11 */
-        user-select: none; /* Standard syntax */
-      }
+        .nav {
+            position: sticky;
+            top: 2.5rem;
+            margin-left: 2.5rem;
+            min-width: 9rem;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding-left: 0;
+            line-height: 1;
+            text-align: right;
+        }
+
+        .nav li {
+            margin-bottom: 0.25rem;
+        }
+
+        .nav a {
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-top: 40px;
+        }
+
+        .section-title {
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #757575;
+            text-decoration: none;
+            border-bottom: 0.75px dashed #757575;
+        }
+
+        a:hover {
+            color: #343434;
+            border-bottom: 0.75px solid #343434;
+            background-color: rgba(52, 52, 52, 0.10);
+        }
+
+        @media (max-width: 900px) {
+            .wrapper {
+                flex-direction: column;
+            }
+
+            .nav {
+                position: static;
+                margin-left: 0;
+                margin-bottom: 2rem;
+                width: 100%;
+            }
+
+            .nav ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                text-align: left;
+            }
+
+            .nav li:before {
+                content: "";
+                margin-right: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 18px;
+                padding: 30px 15px;
+            }
+
+            h1 {
+                font-size: 18px;
+            }
+
+            .nav a {
+                font-size: 16px;
+            }
+
+            .profile-image {
+                max-height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 16px;
+                padding: 20px 10px;
+            }
+
+            h1 {
+                font-size: 16px;
+            }
+
+            .nav a {
+                font-size: 14px;
+            }
+
+            .profile-image {
+                max-height: 250px;
+            }
+        }
     </style>
-  </head>
-  <body>
-    <img src="komi.jpg" alt="Alexander R. Mcneilly" class="profile-pic" />
-    <h1 class="prevent-select">
-      Alexander Mcneilly
-    </h1>
-    <p class="prevent-select">
-      Exploring high-performance systems, web graphics, and media.
-    </p>
-    <p class="prevent-select">
-      I go to MIT</a>; 
-    <!-- Previously I've worked at: -->
-      <!-- <ul class="prevent-select">
-        <li class="prevent-select"><a href="https://marble.worldlabs.ai/">World Labs</a></li>
-        <li class="prevent-select"><a href="https://www.krea.ai/stage/">Krea</a></li>
-        <li class="prevent-select"><a href="https://mitit.org/">M(IT)^2</a></li>
-      </ul>       -->
-    </p>
-    <p class="prevent-select">
-      Please reach out through a mutual connection or friend.
-    </p>
-  </body>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <img src="alex.webp" alt="Alexander McNeilly" class="profile-image">
+            
+            <!-- <p>I'm building tools for spatial intelligence at <a href="https://www.arctic.so/" target="_blank">Arctic</a>.</p> -->
+
+            <p>I'm studying mathematics and philosophy at <a href="https://math.mit.edu/" target="_blank">MIT</a>.</p>
+            
+            <p>In the past, I've worked on product at <a href="https://www.worldlabs.ai/" target="_blank">World Labs</a>, co-created <a href="https://www.krea.ai/" target="_blank">Krea</a>'s 3D products and worked on <a href="https://mitit.org/" target="_blank">M(IT)^2</a>.</p>
+            
+            <p>Please reach out through a mutual connection or friend.</p>
+        </div>
+        
+        <nav class="nav">
+            <ul>
+                <li>Alexander Mcneilly</li>
+                <!-- <li><a href="./notes.html">Notes</a></li> -->
+                <!-- <li><a href="./playground.html">Playground</a></li> -->
+                <!-- <li><a href="./frutiger.html">Frutiger Aero</a></li> -->
+                <!-- <li><a href="./nostalgia.html">Nostalgia</a></li> -->
+                <!-- <li><a href="./taste.html">Taste</a></li> -->
+                <!-- <li><a href="./culture.html">Culture</a></li> -->
+                <!-- <li><a href="./cathedrals.html">Cathedrals</a></li> -->
+                <!-- <li><a href="./chicago.html">Chicago</a></li> -->
+                <!-- <li><a href="./sf.html">San Francisco</a></li> -->
+                <!-- <li><a href="./performance.html">Performance Eng</a></li> -->
+                <!-- <li><a href="./spatial.html">Spatial Computing</a></li> -->
+                <!-- <li><a href="./world.html">World Models</a></li> -->
+                <!-- <li><a href="./studio.html">Studio Sessions</a></li> -->
+            </ul>
+        </nav>
+    </div>
+</body>
 </html>
-
-
-
-
