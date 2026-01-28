@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why I Should Be A PM At World Labs | Alexander Mcneilly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Crimson Pro', serif;
+            font-weight: 300;
+            font-size: 1.188rem;
+            line-height: 1.4;
+            background-color: #F6FAF8;
+            color: #3a3a3a;
+            padding: 2.5rem 1.25rem;
+        }
+        .wrapper {
+            max-width: 100%;
+            margin: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .container {
+            max-width: 38rem;
+            width: 100%;
+            text-align: left;
+        }
+        .nav {
+            position: sticky;
+            top: 2.5rem;
+            margin-left: 2.5rem;
+            min-width: 12rem;
+        }
+        .nav ul {
+            list-style: none;
+            padding-left: 0;
+            line-height: 1.4;
+            text-align: right;
+        }
+        .nav li {
+            margin-bottom: 0.5rem;
+        }
+        .nav a {
+            font-size: 16px;
+        }
+        .nav .name {
+            font-size: 18px;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            letter-spacing: -0.5px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        .section {
+            margin-top: 2rem;
+        }
+        ul.content-list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 1rem;
+        }
+        ul.content-list li {
+            margin-bottom: 0.75rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+        ul.content-list li:before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #757575;
+        }
+        a {
+            color: #757575;
+            text-decoration: none;
+            border-bottom: 0.75px dashed #757575;
+        }
+        a:hover {
+            color: #343434;
+            border-bottom: 0.75px solid #343434;
+            background-color: rgba(52, 52, 52, 0.10);
+        }
+        .quote {
+            font-style: italic;
+            color: #555;
+            margin: 1rem 0;
+            padding-left: 1rem;
+            border-left: 2px solid #ccc;
+        }
+        .highlight {
+            font-weight: 400;
+        }
+        .closing {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
+        }
+        .contact {
+            margin-top: 1.5rem;
+            color: #757575;
+            font-size: 1rem;
+        }
+        @media (max-width: 900px) {
+            .wrapper {
+                flex-direction: column;
+            }
+            .nav {
+                position: static;
+                margin-left: 0;
+                margin-bottom: 2rem;
+                width: 100%;
+            }
+            .nav ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                text-align: left;
+            }
+            .nav .name {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+        }
+        @media (max-width: 768px) {
+            body {
+                font-size: 18px;
+                padding: 30px 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            .nav a {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                font-size: 16px;
+                padding: 20px 10px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            h2 {
+                font-size: 17px;
+            }
+            .nav a {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Why I Should Be A PM At World Labs</h1>
+            <p style="color: #757575; margin-top: -1.5rem; margin-bottom: 2rem;">Alexander Mcneilly</p>
+            
+            <p>This role asks for 5+ years of PM experience. <span style="color: red;">I don't have that.</span></p>
+            <p><b>But I have something a traditional PM hire won't:</b> I've already shipped here, I already know the team, and I've already built a product in the exact category you're expanding into.</p>
+            <p>Spatial intelligence wasn't a product category five years ago. There are no veteran PMs in this space, only fast learners. Rather than years of experience, it's about whether someone can ship in <em>this</em> domain.</p>
+            <p><a href="https://youtu.be/z1g1kkA1M-8?si=JBVQx2JEq61CKuC5&t=3721" target="_blank">In her interview with Tim Ferriss last month</a>, Fei-Fei said:</p>
+            <p class="quote">"When we interview a software engineer, honestly, how much I personally feel the degree they have matters less to us now. It's more about what have you learned? What tools do you use? How quickly can you superpower yourself in using these tools?"</p>
+            <p>The same logic applies to PM experience.</p>
+            
+            <h2 id="already-shipped">I've already shipped at World Labs.</h2>
+            <p>I pushed for the progressive loading that made Marble feel polished. It wasn't assigned. I advocated for it because I knew it mattered. If I hadn't, users wouldn't have called the experience "delightful." It would have been a significant quality-of-life miss.</p>
+            <p>I worked late nights. I worked weekends from home on my own time. I collaborated directly with Fei-Fei, Ben, Dylan, Daniel, and the rest of the team on product decisions and implementation.</p>
+            <p>I already know the codebase, the culture, the constraints, and the people. An external PM hire will spend months learning what I already know.</p>
+            
+            <h2 id="built-this-before">I've built this product category before.</h2>
+            <p>At Krea, I built Stage, a web-based AI 3D editor. You could turn images or text into editable 3D scenes, adjust lighting and cameras in real-time, and render consistent image and video.</p>
+            <p>Based on your recent job postings (specialists for 3D reconstruction, sparse diffusion, data pipelines), I can see World Labs is building a more sophisticated version of this same product category.</p>
+            <p>Stage failed. The usage graph looked like a loss curve. But I know <em>why</em> it failed: the technical constraints we underestimated, the user workflows we got wrong, the product decisions that seemed right but weren't. I've seen what good looks like and, more importantly, what bad looks like. That experience is harder to find than success.</p>
+            
+            <h2 id="collaborate-advocate">I know how to collaborate and advocate for users.</h2>
+            <p>At MITIT, I recruited and led cross-functional teams across software, marketing, and operations. I aligned priorities and our club shipped a competition that's served 5,000+ contestants from 90+ countries over the past two years. Our contestants were our users. I learned to listen to them face-to-face and online and iterate based on their feedback.</p>
+            <p>At Krea, I talked to users directly when they had issues. At World Labs, I collaborated across engineers, researchers, and designers on product decisions. I'm not a PM who throws specs over the wall. I work <em>with</em> teams.</p>
+            <p>I can own heavyweight coding tasks, not just manage tickets. I can prototype in Figma or code, I can evaluate engineering tradeoffs without waiting for estimates, and I can ship. To be competitive, World Labs needs a PM who is as much an IC as they are a manager. That's me.</p>
+            
+            <h2 id="choosing-this">I'm choosing this.</h2>
+            <p>Other companies in this space have expressed interest in me. I also have options outside this industry entirely (quant). PM at World Labs is my dream role.</p>
+            <p>I found working here fulfilling in a way that's hard to articulate. I miss it. The people here are special: internally motivated, mission-driven, building something that genuinely matters. And it's in San Francisco, my favorite place on Earth.</p>
+            <p>I would rather apply my talents here than optimize for a narrower definition of success (market making or arbitrage).</p>
+            
+            <h2 id="observed">What I've observed.</h2>
+            <p>And I think I can help with something specific. During my time at World Labs, I noticed something common in research-driven organizations: brilliant capabilities being built, but when ownership is diffuse, products lose their direction and edge.</p>
+            <p>Bret Taylor once said:</p>
+            <p class="quote">"Few great things have been created by committee. You can sometimes make meaningful things, but rarely will you create extremely well-crafted breakthrough products."</p>
+            <p>I believe great products need clear ownership. They need someone who can hold the vision, make the hard calls, and stay close enough to the technical work to make those calls well. That's the PM I want to be.</p>
+            
+            <h2 id="focus">What I'd focus on.</h2>
+            <ul class="content-list">
+                <li><span class="highlight">Protecting quality:</span> Be the person who says "not yet" when something isn't ready, and fights for the polish that makes products feel magical</li>
+                <li><span class="highlight">Accelerating decisions:</span> Unblock PM-engineering back-and-forth and move faster</li>
+                <li><span class="highlight">Bridging research to product:</span> Scope research capabilities into shippable features with clear user value</li>
+            </ul>
+            
+            <h2 id="risk-reward">The risk/reward.</h2>
+            <p>I'm low-risk to try. If I don't work out as PM, I'm still valuable as a member of technical staff. If I do work out, you've gained a PM who knows the product(s) deeply and can start contributing on day one.</p>
+            
+            <h2 id="my-ask">My ask.</h2>
+            <p><em>Hiring me is a bet on trajectory over tenure.</em></p>
+            <p>I'm also open to being a PM intern if you think I need more structured experience first. I care more about being here and contributing than about title.</p>
+            
+            <div class="closing">
+                <p class="highlight">Alexander Mcneilly</p>
+                <p>mcneilly [at] mit [dot] edu · (847) 650-5488</p>
+            </div>
+        </div>
+        
+        <nav class="nav">
+            <ul>
+                <li class="name">Alexander Mcneilly</li>
+                <li><a href="#already-shipped">Already shipped</a></li>
+                <li><a href="#built-this-before">Built this before</a></li>
+                <li><a href="#collaborate-advocate">Collaborate & advocate</a></li>
+                <li><a href="#choosing-this">Choosing this</a></li>
+                <li><a href="#observed">What I've observed</a></li>
+                <li><a href="#focus">What I'd focus on</a></li>
+                <li><a href="#risk-reward">Risk/reward</a></li>
+                <li><a href="#my-ask">My ask</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
