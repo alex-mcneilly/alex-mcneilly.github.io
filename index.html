@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            cursor: none;
         }
 
         body {
@@ -19,8 +20,8 @@
             font-weight: 300;
             font-size: 1.188rem;
             line-height: 1.25;
-            background-color: #F6FAF8;
-            color: #3a3a3a;
+            background-color: #FAFAF7;
+            color: #262625;
             padding: 2.5rem 1.25rem;
         }
 
@@ -28,12 +29,16 @@
             max-width: 100%;
             margin: 0 1rem;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: flex-start;
         }
 
+        .no-select {
+            user-select: none;
+        }
+
         .container {
-            max-width: 30rem;
+            max-width: 40rem;
             width: 100%;
             text-align: left;
         }
@@ -41,7 +46,6 @@
         .profile-image {
             width: 100%;
             object-fit: cover;
-            border-radius: 0.5rem;
             margin-bottom: 1.75rem;
         }
 
@@ -56,8 +60,10 @@
             list-style: none;
             padding-left: 0;
             line-height: 1;
-            text-align: right;
+            text-align: left;
         }
+
+
 
         .nav li {
             margin-bottom: 0.25rem;
@@ -105,6 +111,18 @@
             color: #343434;
             border-bottom: 0.75px solid #343434;
             background-color: rgba(52, 52, 52, 0.10);
+        }
+
+        .cursor-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #343434;
+            border: 1px solid #FAFAF7;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
         }
 
         @media (max-width: 900px) {
@@ -173,15 +191,17 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="container">
-            <img src="snow.jpg" alt="Snow." class="profile-image">
+        <div class="container no-select">
+            <img src="san-francisco.jpg" alt="San Francisco, California" class="profile-image">
 
-            <p>I like math</p>
+            <p>I work on world models, performance engineering, and design.</p>
+
+            <p>I study <a href="https://math.mit.edu">math at MIT.</a> In the past, I've enjoyed working on <a href="https://marble.worldlabs.ai">multimodal world model products</a>, <a href="https://www.krea.ai">real-time creative tools</a>, and <a href="https://mitit.org">MIT's premier programming competition</a>.</p>
             
-            <p>Please reach out through a mutual connection or friend.</p>
+            <p><i>Please reach out through a mutual connection or friend.</i></p>
         </div>
         
-        <nav class="nav">
+        <nav class="nav no-select">
             <ul>
                 <li>Alexander Mcneilly</li>
                 <!-- <li><a href="./notes.html">Notes</a></li> -->
@@ -197,16 +217,22 @@
                 <!-- <li><a href="./spatial.html">Spatial Computing</a></li> -->
                 <!-- <li><a href="./world.html">World Models</a></li> -->
                 <!-- <li><a href="./studio.html">Studio Sessions</a></li> -->
+                <li style="color:rgba(52, 52, 52, 0.50)"><i>San Francisco, Calif.</i></li>
             </ul>
         </nav>
     </div>
+    <div class="cursor-dot"></div>
 </body>
+
+<script>
+    const dot = document.querySelector('.cursor-dot');
+
+    window.addEventListener('mousemove', (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+
+        dot.style.left = x + 'px';
+        dot.style.top = y + 'px';
+    });
+</script>
 </html>
-
-
-
-
-
-
-
-
